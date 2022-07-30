@@ -5,6 +5,7 @@
     --clr-secondary: #f0b429;
     --clr-neutral: #e2e8f0;
     --clr-font-light: #636363;
+    --box-shadow: box-shadow: 2px 2px 4px 0px rgba(196,196,196,0.65);
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -17,6 +18,9 @@ ul {
     list-style: none;
     padding: 0;
 }
+li:hover, i:hover {
+    cursor: pointer;
+}
 img {
     max-height: 48px;
 }
@@ -25,8 +29,9 @@ p {
 }
 .container {
     display: grid;
-    grid-template-columns: max(230px, 20%) minmax(400px, 3fr);
+    grid-template-columns: max(230px, 15%) minmax(400px, 3fr);
     grid-template-rows: max(180px, 10%) 1fr;
+    transition: all .2s;
 }
 
 /* Header */
@@ -37,7 +42,8 @@ header {
     grid-template-columns: minmax(225px, 60%) minmax(150px, 40%);
     gap: 1rem;
     padding: 1rem 2vw;
-    box-shadow: 0 2px 4px rgb(190, 190, 190);
+    box-shadow: 2px 2px 4px 4px rgba(196,196,196);
+    box-shadow: var(--box-shadow);
     z-index: 1;
 }
 .search-wrapper {
@@ -54,7 +60,7 @@ input[type="search"] {
     background-color: var(--clr-neutral);
 }
 input[type="search"]:focus {
-    outline: none;
+    outline: 1px solid rgba(144, 144, 144, 0.591);
 }
 .search-wrapper i {
     position: relative;
@@ -135,6 +141,7 @@ button:hover {
 }
 .nav {
     margin-bottom: 3rem;
+
 }
 .nav li {
     margin: 1rem 0;
@@ -172,6 +179,8 @@ button:hover {
    font-weight: 300;
    border-left: .5rem solid var(--clr-secondary);
    border-radius: 8px;
+   box-shadow: 2px 2px 4px 0px rgba(196,196,196,0.65);
+   transition: all .5s;
 }
 .card-icons {
     align-self: flex-end;
@@ -209,6 +218,7 @@ article {
     margin-top: .5rem;
     background-color: #FFF;
     border-radius: 8px;
+    box-shadow: 2px 2px 4px 0px rgba(196,196,196,0.65);
 }
 .announcements ul {
     padding: 1rem 2rem;
@@ -232,5 +242,22 @@ article {
 .user {
     font-weight: 400;
 }
+
 /* Media Queries  */
+
+@media screen and (max-width: 1170px) {
+    .container {
+        grid-template-columns: 68px minmax(400px, 3fr);
+    }
+    .sidebar {
+        position: relative;
+        width: 68px;
+    }
+    .logo h1, .nav a {
+        display: none;
+    }
+    .nav li {
+        margin: 1.5rem 0;
+    }
+}
 
