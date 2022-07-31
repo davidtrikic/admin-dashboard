@@ -61,7 +61,8 @@ input[type="search"] {
     background-color: var(--clr-neutral);
 }
 input[type="search"]:focus {
-    outline: 1px solid rgba(144, 144, 144, 0.591);
+    outline: none;
+    box-shadow: 0 2px 4px rgba(167, 167, 167, 0.634);
 }
 .search-wrapper i {
     position: relative;
@@ -284,6 +285,7 @@ article {
     input[type="search"]:focus {
         outline: none;
     }
+
     .sidebar {
         width: 50px;
         padding: 1rem 0;
