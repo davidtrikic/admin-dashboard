@@ -3,8 +3,7 @@ The Odin Project Course Assignment
 
 - This project is a part of [The Odin Project](https://www.theodinproject.com/paths/full-stack-javascript/courses/intermediate-html-and-css) Intermediate HTML & CSS curriculum
 
-- Final project from this part of the course
-- Main goal is a CSS Grid & Flexbox practice
+- The goal is a CSS Grid & Flexbox practice
 
 ### Live preview: [link](https://davidtrikic.github.io/admin-dashboard/)
 
