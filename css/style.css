@@ -103,7 +103,6 @@ h1 {
     flex-wrap: wrap;
     gap: .5rem 1rem; 
 }
-
 button {
     border: 0;
     background-color: var(--clr-main);
@@ -144,10 +143,9 @@ button:hover {
 }
 .nav {
     margin-bottom: 3rem;
-
 }
 .nav li {
-    margin: 1rem 0;
+    margin: 1.5rem 0;
     transition: all .1s ease-in;
 }
 .nav li:hover {
@@ -155,6 +153,10 @@ button:hover {
 }
 .nav i {
     margin-right: 1rem;
+}
+.fa-file-lines {
+    position: relative;
+    left: 3px;
 }
 
 /* Main content */
@@ -278,6 +280,9 @@ article {
     }
     button {
         padding: .5rem 1rem;
+    }
+    input[type="search"]:focus {
+        outline: none;
     }
     .sidebar {
         width: 50px;
