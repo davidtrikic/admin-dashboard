@@ -250,6 +250,13 @@ article {
     font-weight: 400;
 }
 
+.attribution {
+    font-size: .625rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 auto;
+}
+
 /* Media Queries  */
 
 @media screen and (max-width: 1170px) {
