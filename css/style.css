@@ -5,7 +5,7 @@
     --clr-secondary: #f0b429;
     --clr-neutral: #e2e8f0;
     --clr-font-light: #636363;
-    --box-shadow: box-shadow: 2px 2px 4px 0px rgba(196,196,196,0.65);
+    --box-shadow: 2px 2px 4px 0px rgba(196,196,196,0.65);
 }
 body {
     font-family: 'Roboto', sans-serif;
